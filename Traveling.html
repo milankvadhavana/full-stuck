@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Traveling Registation Form</title>
+        <style>
+            body{
+                margin-left: 20px;
+                background-image: url("images/bk.jpg");
+                
+            }
+            form{
+
+                font-size: larger;
+                background-image: url("images/bk2.jpg");
+                background-size: cover;
+                border-radius: 10px;
+                margin:140px 40px; 
+                padding: 30px;
+                width: 50%;
+                border: 5px solid rgb(243, 240, 240);
+                outline-offset: 10px;
+            }
+            input{
+                   border-radius: 10px;
+                   height: 25px;
+                   margin: 2px 10px;
+        
+            }
+            .b{
+                   border: 3px solid black;
+                   font-size: medium;
+                   background-color: rgb(156, 116, 116);
+                   outline-offset: 10px;
+            }
+
+    
+        </style> 
+
+
+    </head>
+    <body>
+        <center>
+        <form method="post" action="file:///F:/Full%20Stuck/thankyou.html" >
+            <h1>Travel Regisatation Form</h1>
+          <label for="name" >Enter Your Name :</label>
+          <input type="text" id="name" placeholder="enter your full name">
+          <br></br>
+          <label>Male<input type="radio" name="Gender" value="M"/></label>
+          <label>Female<input type="radio" name="Gender" value="F" /></label>
+          <br></br>
+          <label for="DOB">Enter your DOB :</label>
+          <input type="date" id="DOB">
+          <br></br>
+          <label for="address">Enter Address :</label>
+          <input type="text" id="address" placeholder="enter your address">
+          <br></br>
+          <label for="number">Contect No :</label>
+          <input type="text" id="number" placeholder="Contect no">
+          <br></br>
+          <label></label>
+          <label for="email">Enter your Mail :</label>
+          <input type="email" id="email" placeholder="ex.abc@gmail.com">
+          <br></br>
+          <label for="pass">Enter the password :</label>
+          <input type="password" id="pass" min="6" placeholder="min 6 digit ">
+          <br></br>
+          <input type="submit" value="Submit" class="b" onclick="openNewForm()"/>
+          <input type="reset" class="b">
+            
+        </form>
+    </center>
+    </body>
+</html>
