@@ -22,8 +22,10 @@
             }
             input{
                    border-radius: 10px;
-                   height: 25px;
+                   height: 30px;
+                
                    margin: 2px 10px;
+                
         
             }
             .b{
@@ -31,6 +33,10 @@
                    font-size: medium;
                    background-color: rgb(156, 116, 116);
                    outline-offset: 10px;
+            }
+            label{
+                   font-size: larger;
+
             }
 
     
@@ -43,23 +49,23 @@
         <form method="post" action="file:///F:/Full%20Stuck/thankyou.html" >
             <h1>Travel Regisatation Form</h1>
           <label for="name" >Enter Your Name :</label>
-          <input type="text" id="name" placeholder="enter your full name">
+          <input type="text" id="name" placeholder="enter your full name" required>
           <br></br>
           <label>Male<input type="radio" name="Gender" value="M"/></label>
           <label>Female<input type="radio" name="Gender" value="F" /></label>
           <br></br>
           <label for="DOB">Enter your DOB :</label>
-          <input type="date" id="DOB">
+          <input type="date" id="DOB" required>
           <br></br>
           <label for="address">Enter Address :</label>
-          <input type="text" id="address" placeholder="enter your address">
+          <textarea id="address" rows="4" cols="15" required></textarea>
           <br></br>
           <label for="number">Contect No :</label>
-          <input type="text" id="number" placeholder="Contect no">
+          <input type="text" id="number" placeholder="Contect no" required>
           <br></br>
           <label></label>
           <label for="email">Enter your Mail :</label>
-          <input type="email" id="email" placeholder="ex.abc@gmail.com">
+          <input type="email" id="email" placeholder="ex.abc@gmail.com" required>
           <br></br>
           <label for="pass">Enter the password :</label>
           <input type="password" id="pass" min="6" placeholder="min 6 digit ">
